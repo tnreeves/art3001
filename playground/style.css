@@ -1,0 +1,23 @@
+h1{
+    color: rgb(6, 236, 109);
+    font-size: 3rem;
+    width: 70%;
+    
+    
+}
+
+.demo{
+    font-size: 2rem;
+    width: 70%;
+    background: tan;
+    color: rgb(255, 255, 255);
+}
+
+@media only screen and (min-width: 900px) {
+    .demo{
+        background-color: rgb(89, 42, 165);
+        font-family:monospace;
+        width: 95%;
+    }
+    /* font-size: 5rem; */
+}
