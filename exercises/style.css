@@ -1,0 +1,133 @@
+*{
+    background-color: rgb(255, 196, 0);
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: white;
+  
+}
+header{
+   font-size: 11vmin ;
+   font-weight: bold;
+   padding-top: 200px ;
+   padding-inline: 10%;
+}
+h1{
+    font-size: 8vmin;
+    padding-bottom: 50% ;
+    padding-inline: 10%;
+}
+h2{
+    font-size: 45px;
+   
+}
+h3{
+    font-size: 25px;
+}
+h4{
+    font-size: 5vmin;
+    text-align: center;
+}
+
+
+.grid-container * {
+    border: 2px solid rgb(255, 0, 0);
+  background-color: rgb(40, 203, 231);
+}
+.grid-container div:after {
+  content: attr(class);
+  color: black;
+  justify-content: center;
+  align-items: center;
+  height: 5vmin;
+}
+.grid-container {
+padding:2px;
+  display: grid;
+  height: 100%;
+  grid-template-columns: 25% 25% 25% 25%;
+  grid-template-rows:  20vmin 20vmin 20vmin 20vmin;
+  grid-template-areas: "grid-1 grid-5 grid-9 grid-13" 
+                       "grid-2 grid-6 grid-10 grid-14" 
+                       "grid-3 grid-7 grid-11 grid-15" 
+                       "grid-4 grid-8 grid-12 grid-16";
+}
+.grid-1 {
+  grid-area: grid-1;
+  background-color: tomato;
+}
+.grid-2 {
+  grid-area: grid-2;
+}
+.grid-3 {
+  grid-area: grid-3;
+}
+.grid-4 {
+  grid-area: grid-4;
+}
+.grid-5 {
+  grid-area: grid-5;
+}
+.grid-6 {
+  grid-area: grid-6;
+}
+.grid-7 {
+  grid-area: grid-7;
+}
+.grid-8 {
+  grid-area: grid-8;
+}
+.grid-9 {
+  grid-area: grid-9;
+}
+
+.grid-10 {
+  grid-area: grid-10;
+}
+
+.grid-11 {
+  grid-area: grid-11;
+}
+
+.grid-12 {
+  grid-area: grid-12;
+}
+
+.grid-13 {
+  grid-area: grid-13;
+}
+
+
+COlors
+.donate, .grid-2, .grid-3, .grid-4 {
+  background-color: #000;
+}
+
+.grid-5, .grid-6, .grid-7, .grid-8 {
+  background-color: #111;
+}
+
+.grid-9, .grid-10, .grid-11, .grid-12 {
+  background-color: #222;
+}
+
+.grid-13, .grid-14, .grid-15, .grid-16 {
+  background-color: #333;
+}
+h5{
+    font-size: 4vmin;
+    padding-bottom: 25%;
+}
+
+/* .grid{
+    width: 21%;
+    padding-bottom:51%;
+    background:purple;
+    border: 5px, solid, black;
+    float:left;
+    text-align:center;
+    margin:1%;
+  } */
+
+  .container{
+    margin:0 auto;
+    max-width:800px;
+  }
