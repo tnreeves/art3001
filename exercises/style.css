@@ -27,103 +27,65 @@ h1{
 
 h2{
     font-size: 45px;
+    padding-bottom: 0%;
+    padding-inline: 10%;
 }
 
 h3{
     font-size: 25px;
+    padding-bottom: 5%;
+    padding-inline: 10%;
+    word-wrap: normal;
 }
 
-h4{
-    font-size: 5vmin;
+h4{ padding: 10%;
     text-align: center;
-    
+      
 }
 
-.grid-container * {
-border: 2px solid rgb(0, 153, 255);
-
+.grid-container {
+    display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  gap: 50px 40px;
+  
 }
 
-.grid-container div:after {
-  content: attr(class);
-  color: black;
-  justify-content: center;
-  align-items: center;
-  height: 5vmin;
-}
-/* .grid-container {
-padding:2px;
+.top-row {
   display: grid;
-  height: 100%;
-  grid-template-columns: 25% 25% 25% 25%;
-  grid-template-rows:  20vmin 20vmin 20vmin 20vmin;
-  grid-template-areas: "grid-1 grid-5 grid-9 grid-13" 
-                       "grid-2 grid-6 grid-10 grid-14" 
-                       "grid-3 grid-7 grid-11 grid-15" 
-                       "grid-4 grid-8 grid-12 grid-16";
-} */
-
-.grid-1 {
-  grid-area: grid-1;
- }
-.grid-2 {
-  grid-area: grid-2;
-}
-.grid-3 {
-  grid-area: grid-3;
-}
-.grid-4 {
-  grid-area: grid-4;
-}
-.grid-5 {
-  grid-area: grid-5;
-}
-.grid-6 {
-  grid-area: grid-6;
-}
-.grid-7 {
-  grid-area: grid-7;
-}
-.grid-8 {
-  grid-area: grid-8;
-}
-.grid-9 {
-  grid-area: grid-9;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr;
+  gap: 25px 25px;
+  grid-area: 1 / 1 / 2 / 5;
 }
 
-.grid-10 {
-  grid-area: grid-10;
-}
+.Donate { grid-area: 1 / 1 / 2 / 2; }
 
-.grid-11 {
-  grid-area: grid-11;
-}
+.Vote { grid-area: 1 / 2 / 2 / 3; }
 
-.grid-12 {
-  grid-area: grid-12;
-}
+.Sign-Petitions { grid-area: 1 / 3 / 2 / 4; }
 
-.grid-13 {
-  grid-area: grid-13;
-}
+.Share { grid-area: 1 / 4 / 2 / 5; }
+
+.For-Protesters { grid-area: 1 / 5 / 2 / 6; }
+
+.BLM-Canada { grid-area: 2 / 1 / 3 / 2; }
+
+.BLM-UK { grid-area: 2 / 2 / 3 / 3; }
+
+.BLM-Australia { grid-area: 2 / 3 / 3 / 4; }
+
+.Maps-of-Protests { grid-area: 2 / 4 / 3 / 5; }
+
+.More-Resources { grid-area: 3 / 1 / 4 / 2; }
+
+.Other-Causes { grid-area: 3 / 2 / 4 / 3; }
+
+.FAQ { grid-area: 3 / 3 / 4 / 4; }
+
+.Translations { grid-area: 3 / 4 / 4 / 5; }
 
 
-COlors
-.donate, .grid-2, .grid-3, .grid-4 {
-  background-color: #000;
-}
-
-.grid-5, .grid-6, .grid-7, .grid-8 {
-  background-color: #111;
-}
-
-.grid-9, .grid-10, .grid-11, .grid-12 {
-  background-color: #222;
-}
-
-.grid-13, .grid-14, .grid-15, .grid-16 {
-  background-color: #333;
-}
 /* h5{
     font-size: 4vmin;
     padding-bottom: 25%;
@@ -132,14 +94,23 @@ COlors
 /* .grid{
     width: 21%;
     padding-bottom:51%;
-    background:purple;
-    border: 5px, solid, black;
+  color: red;
     float:left;
     text-align:center;
     margin:1%;
   } */
 
-  .container{
+  /* .container{
     margin:0 auto;
     max-width:800px;
+  } */
+
+button{
+    border-radius: 50%;
+    border: 20px solid rgb(255, 255, 255);
+    padding: 10%; 
+    color: black;
+    font-size: 5vmin ;
+   font-weight: bold;
+
   }
