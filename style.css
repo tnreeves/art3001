@@ -40,7 +40,8 @@ a{
    /* text-decoration: none; */
    align-items: center;
    text-align: left;
-   color: #BC8A5F;
+   color: #f3ecd5;
+ font-size: 5vmin;
 }
 
 a:hover{
