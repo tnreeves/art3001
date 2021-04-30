@@ -1,0 +1,115 @@
+.background
+
+html, body{
+  color: white;
+  font-weight: bold;
+  padding:0px;
+  margin:0px;
+  background:#FF8A5B;
+  font-family: 'Trebuchet MS', sans-serif;  width:10vw;
+}
+body * {
+  margin:0;
+  padding:0;
+}
+
+/* HTML Nav Styles */
+/* HTML Nav Styles */
+/* HTML Nav Styles */
+nav menuitem {
+  position:relative;
+  display:block;
+  opacity:0;
+  cursor:pointer;
+}
+
+nav menuitem > menu {
+  position: absolute;
+  pointer-events:none;
+}
+nav > menu { display:flex; }
+
+nav > menu > menuitem { pointer-events: all; opacity:1; }
+menu menuitem a { white-space:nowrap; display:block; }
+  
+menuitem:hover > menu {
+  pointer-events:initial;
+}
+menuitem:hover > menu > menuitem,
+menu:hover > menuitem{
+  opacity:1;
+}
+nav > menu > menuitem menuitem menu {
+  transform:translateX(100%);
+  top:0; right:0;
+}
+
+nav { 
+  margin-top: 10%;
+  margin-left: 10%;
+}
+
+nav a {
+  background:#BFDBF7;
+  min-width:250px;
+  transition: background 0.5s, color 0.5s, transform 0.5s;
+  margin:10px 45px 10px 0px;
+  padding: 15% 50% 15% 10%;
+  box-sizing:border-box;
+  border-radius:50px;
+  box-shadow: -3px 5px 2px #1F7A8C;
+  position:relative;
+}
+
+nav a:hover:before {
+  content:'';
+  top:0;left:0;
+  position:absolute;
+  background:#25CED1;
+  opacity:35% ;
+  box-shadow: -3px 8px 3px #1F7A8C;
+  width:100%;
+  height:100%;
+  box-sizing:border-box;
+  border-radius:50px;
+}
+
+nav > menu > menuitem > a + menu:after{
+  content: '';
+  position:absolute;
+  border:20px solid transparent;
+  border-top: 15px solid white;
+  left:20px;
+  top: -40px;  
+}
+nav menuitem > menu > menuitem > a + menu:after{ 
+  content: '';
+  position:absolute;
+  border:10px solid transparent;
+  border-left: 50px solid white;
+  top: 35px;
+  left:-130px;
+  transition: opacity 0.5, transform 0.3s;
+}
+
+nav > menu > menuitem > menu > menuitem{
+  transition: transform 0.5s, opacity 0.3s;
+  transform:translateY(150%);
+  opacity:0;
+}
+nav > menu > menuitem:hover > menu > menuitem,
+nav > menu > menuitem.hover > menu > menuitem{
+  transform:translateY(0%);
+  opacity: 1;
+}
+
+menuitem > menu > menuitem > menu > menuitem{
+  transition: transform 0.5s, opacity 0.5s;
+  transform:translateX(195px) translateY(0%);
+  opacity: 0;
+} 
+menuitem > menu > menuitem:hover > menu > menuitem,  
+menuitem > menu > menuitem.hover > menu > menuitem{  
+  transform:translateX(0) translateY(0%);
+  opacity: 1;
+}
